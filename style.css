@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    background: #000;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.logo{
+    width: 40px;
+    margin-top: 30px;
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+header ul li{
+    margin: 0 15px;
+}
+header ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 18px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.content .text{
+    color: #fff;
+    width: 40%;
+}
+.content .text h2{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.content .text p{
+    margin: 25px 0;
+    font-size: 18px;   
+}
+.btn{
+    text-decoration: none;
+    background: #fff;
+    padding: 8px 15px;
+    border-radius: 30px;
+    transition: 0.4s ease;
+    border: 2px solid #fff;
+    color: #000;
+}
+.btn:hover{
+    background: transparent;
+    color: #fff;
+}
+.content .image{
+    width: 30%;
+    cursor: pointer;
+}
+.content .image img{
+    width: 180px;
+}
+.icons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);   
+}
+.icons img{
+    width: 40px;
+    transition: 0.4s;
+}
+.icons img:hover{
+    transform: scale(1.2);    
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 991px){
+    .content{
+        width: 90%;
+    }
+    .content .text{
+        width: 50%;
+        margin-top: 30px;
+    }
+    .content .image{
+        width: 18%;
+    }
+}
+@media (max-width: 853px){
+    .container{
+        width: 120%;
+        height: 120.4vh;
+    }
+    .content{
+        width: 95%;
+    }
+    .content .text{
+        width: 55%;
+        margin-top: 30px;
+    }
+    .content .image{
+        width: 25%;
+    }
+    .icons{
+        bottom: 20%;
+    }
+    .icons img {
+        width: 50px;
+    }
+}
+@media (max-width: 683px){
+    .container{
+        width: 150%;
+        height: 151vh;
+    }
+    header ul a{
+        font-size: 15px;
+    }
+    .content{
+        width: 95%;
+    }
+    .content .text{
+        width: 55%;
+        margin-top: 14%;
+    }
+    .content .image{
+        width: 25%;
+        margin-top: 13%;
+    }
+    .icons{
+        bottom: 27%;
+    }
+    .icons img {
+        width: 60px;
+        transition: 0.4s;
+    }
+}
+@media (max-width: 450px){
+    .container {
+        width: 157%;
+        height: 157vh;
+    }
+    header ul{
+        display: none;
+    }
+    .content{
+        width: 95%;
+    }
+    .content .text{
+        width: 55%;
+        margin-top: 14%;
+    }
+    .content .image{
+        width: 31%;
+        margin-top: 13%;
+    }
+    .icons{
+        bottom: 27%;
+    }
+    .icons img {
+        width: 55px;
+        transition: 0.4s;
+    }
+}
